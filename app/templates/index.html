@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+<div
+    class="bg-white mt-8 mx-auto px-8 rounded-lg shadow h-32 container flex flex-col justify-center text-base font-medium space-y-3">
+    <span class="text-[16px] font-bold">Статус:&nbsp;&nbsp;&nbsp;{{ status }}
+        <span class="font-normal pl-4 font-mono text-sm"> {{
+            update_ts }}
+        </span> </span>
+    <span class="text-[16px] font-bold">
+        Текущий пробег:
+        {% if mileage is not none %}
+        <span class="font-normal pl-2 font-mono"> {{ mileage }} км </span>
+
+        {% else %}
+        <span class="font-normal pl-2 font-mono"> нет данных </span>
+        {% endif %}
+    </span>
+</div>
+<!-- Таблица сервисов и остатки -->
+<div class="bg-white mx-auto mt-8 rounded-lg shadow p-6 container">
+    <table class="min-w-full text-base">
+        <thead>
+            <tr>
+                <th class="text-left pb-2">Сервис</th>
+                <th class="text-left pb-2">Последнее обслуживание (км)</th>
+                <th class="text-left pb-2">Регламент обслуживания (км)</th>
+                <th class="text-left pb-2">Осталось (км)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for service in services %}
+            <tr class="{% if loop.index0 % 2 == 0 %}bg-white{% else %}bg-gray-50{% endif %} border-t">
+                <td class="py-2 pr-6">{{ service.description }}</td>
+                <td class="py-2">{{ service.latest_action_km }}</td>
+                <td class="py-2">{{ service.range_km }}</td>
+                <td class="py-2">{{ service.remain_km }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

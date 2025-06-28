@@ -1,0 +1,24 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.log
+.env
+.venv/
+env/
+venv/
+.idea/
+.vscode/
+*.egg-info/
+dist/
+build/
+.DS_Store
+.mypy_cache
+starline_data.json
+
+# Virtual environments
+.venv
+/temp
+

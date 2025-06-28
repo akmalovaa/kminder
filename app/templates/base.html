@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kminder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link id="favicon" rel="icon" type="image/x-icon" href="static/favicon.ico">
+</head>
+
+<body class="m-0 font-sans bg-gray-100">
+    <div class="bg-[#414951] text-white h-16 flex items-center">
+        <div class="container mx-auto flex items-center justify-end px-8">
+            <div class="mr-auto text-2xl font-bold tracking-wider">
+                <a href="/" style="text-decoration: none; color: inherit;">Kminder</a>
+            </div>
+            <div class="flex gap-8">
+                <a href="/" class="hover:text-blue-400">Главная</a>
+                <a href="/history" class="hover:text-blue-400">История обслуживания</a>
+            </div>
+        </div>
+    </div>
+    {% block content %}{% endblock %}
+</body>
+
+</html>

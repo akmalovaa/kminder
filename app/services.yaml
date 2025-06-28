@@ -1,0 +1,28 @@
+service_1:
+  description: Моторное масло
+  latest_action_km: 132893
+  range_km: 5000
+service_2:
+  description: Воздушный и салонный фильтр
+  latest_action_km: 132893
+  range_km: 15000
+service_3:
+  description: Комплект ремня ГРМ
+  latest_action_km: 110500
+  range_km: 60000
+service_4:
+  description: Приводной ремень
+  latest_action_km: 60000
+  range_km: 90000
+service_5:
+  description: Антифриз
+  latest_action_km: 98200
+  range_km: 75000
+service_6:
+  description: Масло в МКПП и редукторе
+  latest_action_km: 60000
+  range_km: 45000
+service_7:
+  description: Свечи зажигания
+  latest_action_km: 114200
+  range_km: 30000

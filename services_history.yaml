@@ -1,0 +1,15 @@
+- date: 28.06.2025
+  mileage: 132893
+  service: Моторное масло
+  description: Лукойл GENESIS ARMORTECH 5W-40 + Фильтр MAN
+  cost: 4000
+- date: 28.06.2025
+  mileage: 132893
+  service: Воздушный и салонный фильтр
+  description: Заменил вместе при замене масла
+  cost: 3500
+- date: 28.06.2025
+  mileage: 132893
+  service: Кнопка стеклоподъемника
+  description: Кнопка стеклоподъемника переднего пассажирского сидения
+  cost: 1300

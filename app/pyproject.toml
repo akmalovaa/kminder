@@ -1,0 +1,16 @@
+[project]
+name = "starline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "apscheduler>=3.11.0",
+    "fastapi>=0.115.13",
+    "jinja2>=3.1.6",
+    "pydantic-settings>=2.9.1",
+    "python-multipart>=0.0.20",
+    "pyyaml>=6.0.2",
+    "requests>=2.32.4",
+    "uvicorn>=0.34.3",
+]
