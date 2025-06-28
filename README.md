@@ -68,16 +68,14 @@ docker-compose up -d --build
 
 Отредактируйте `services.yaml` для настройки интервалов ТО:
 ```yaml
-services:
-  oil_change:
-    name: "Замена масла"
-    interval_km: 6000
-    last_service_km: 45000
-
-  brake_pads:
-    name: "Замена тормозных колодок"
-    interval_km: 30000
-    last_service_km: 40000
+service_1:
+  description: Моторное масло
+  latest_action_km: 43521
+  range_km: 8000
+service_2:
+  description: Воздушный и салонный фильтр
+  latest_action_km: 35421
+  range_km: 15000
 ```
 
 
