@@ -3,6 +3,7 @@
 
 
 ![screen](./.github/images/screen.png)
+![screen](./.github/images/screen2.png)
 
 ## 🎯 О проекте
 
